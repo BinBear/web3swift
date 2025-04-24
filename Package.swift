@@ -13,7 +13,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/attaswift/BigInt.git", .upToNextMajor(from: "5.4.0")),
-        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .upToNextMajor(from: "1.8.0")),
+        .package(url: url: "https://github.com/krzyzanowskim/CryptoSwift.git", from: "1.8.4"),
         .package(name: "secp256k1", url: "https://github.com/21-DOT-DEV/swift-secp256k1", exact: "0.18.0"),
     ],
     targets: [
