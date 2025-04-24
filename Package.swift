@@ -20,13 +20,13 @@ let package = Package(
         .target(
             name: "Web3Core",
             dependencies: ["BigInt", 
-                           .product(name: "secp256k1", package: "swift-secp256k1"),
+                           "secp256k1",
                            "CryptoSwift"]
         ),
         .target(
             name: "web3swift",
             dependencies: ["BigInt", 
-                           .product(name: "secp256k1", package: "swift-secp256k1"),
+                           "secp256k1",
                            "CryptoSwift"],
             resources: [
                 .copy("./Browser/browser.js"),
